@@ -1,10 +1,14 @@
 //Once you complete a problem, open up Chrome and check the answer in the console.
 
 
-//Create an object called me. Give it a key of name with the value being your name, and another key of age with the value being your age. Then alert your name using dot notation.
+//Create an object called me. Give it a key of name with the value being your name, and another key of age with the value being your age.
+//Then alert your name using dot notation.
 
   //Code here
-
+var me = {
+  name: "Tyson",
+  age: 32
+};
 
 
 
@@ -13,15 +17,25 @@
 
 
 
-//Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. Have the values to those keys be your favorite thing in that category.
+//Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. Have the values to those
+//keys be your favorite thing in that category.
 
   //Code here
+var favoriteThings = {
+  band: "the national",
+  food: "Stroganoff",
+  person: "myself",
+  book: "the Hobbit",
+  movie: "the Truman show",
+  holiday: "halloween",
+};
 
-
-//After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
+//After you've made your object, add another key named 'car' with the value being your favorite car and then another key named
+//'brand' with the value being your favorite brand.
 
   //Code here
-
+favoriteThings[car] = "Atom";
+favoriteThings[brand] = "Ariel";
 
 //Now change the food key in your favoriteThings object to be 'Lettuce' and change the book key in your favoriteThings object to be '50 Shades of Gray'.
 
@@ -196,9 +210,9 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 // Create a function called MakeCard which takes in all the data it needs to make a Credit Card object and returns that object so that whenever you invoke MakeCard, you get a brand new credit card.
 
   //Code Here
-  
-  
-  
+
+
+
 //NEXT PROBLEM
 
 
@@ -209,5 +223,3 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 */
 
   //Code Here
-
-
