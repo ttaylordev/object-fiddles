@@ -10,13 +10,7 @@ var me = {
   age: 32
 };
 
-
-
 //NEXT PROBLEM
-
-
-
-
 //Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. Have the values to those
 //keys be your favorite thing in that category.
 
@@ -34,65 +28,69 @@ var favoriteThings = {
 //'brand' with the value being your favorite brand.
 
   //Code here
-favoriteThings[car] = "Atom";
-favoriteThings[brand] = "Ariel";
+favoriteThings.car = "Atom";
+favoriteThings.brand = "Ariel";
 
-//Now change the food key in your favoriteThings object to be 'Lettuce' and change the book key in your favoriteThings object to be '50 Shades of Gray'.
+/*Now change the food key in your favoriteThings object to be 'Lettuce' and change the book key in your favoriteThings object
+to be '50 Shades of Gray'.*/
 
   //Code here
-
-
-
+favoriteThings.food = "Lettuce";
+favoriteThings.book = "50 Shades of Gray";
 
 //NEXT PROBLEM
-
-
-
-/*Create an empty Object called backPack. Now, create a variable called 'item'
-and set it equal to the string 'firstPocket'. Using bracket notation,
-add a 'firstPocket' key (or property) to backPack, using 'item'.
+/*Create an empty Object called backPack.
+Now, create a variable called 'item'and set it equal to the string 'firstPocket'.
+Using bracket notation, add a 'firstPocket' key (or property) to backPack, using 'item'.
 Set the value of that key to 'chapstick'.
 
 Using dot notation, add another key (or property) to your backPack object
 that is named color, with the value being the color of your backpack. */
 
   //Code here
+var backPack = {};
+var item = "firstPocket";
+backPack[item] = "chapstick";
+backPack.color = "black";
 
 //After you do the above, alert your entire backPack object.
 
   //Code here
+alert(backPack);
 
 /*You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console. */
 
   //Code here
-
-
-
+console.log(backPack);
 
 //NEXT PROBLEM
-
-
-
-
-//Create another 'me' object with the following properties name, age, height, gender, married, eyeColor, hairColor. Fill those properties in with the appropriate values.
+//Create another 'me' object with the following properties name, age, height, gender, married, eyeColor, hairColor.
+//Fill those properties in with the appropriate values.
 
   //Code Here
+  var me ={
+    name: "Tyson",
+    age: "32",
+    gender: "Male",
+    married: "Yes",
+    eyeColor: "blue",
+    hairColor: "blonde"
+  };
 
 //Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
   //Code Here
-
-
-
+for (var key in me){
+  if (me.hasOwnProperty(key)){
+    alert(me[key]);
+  }
+}
 
 //NEXT PROBLEM
-
-
-
-
-//Create an Object called 'album' with 5 keys named different song titles that you make up, with the values being the length of each song.
+//Create an Object called 'album' with 5 keys named different song titles that you make up,
+//with the values being the length of each song.
 
   //Code Here
 
@@ -131,7 +129,7 @@ var user = {
     birthday: undefined,
     username: 'tylermcginnis33',
     age: 0
-}
+};
 /*Above you're given a user object. Loop through the user object checking to make sure
 that each value is truthy. If it's not truthy, remove it from the object. */
 
