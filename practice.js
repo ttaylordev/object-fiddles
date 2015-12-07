@@ -93,35 +93,44 @@ for (var key in me){
 //with the values being the length of each song.
 
   //Code Here
-
+var album ={
+  song1: 1,
+  song2: 2,
+  song3: 3,
+  song4: 4,
+  song5: 5
+};
 //Now, loop through your album object alerting every song title individually.
 
   //Code Here
+for (var key in album){
+  if (album.hasOwnProperty(key)){
 
-
-
+  }
+}
 
 //NEXT PROBLEM
-
-
-
-
 //Create an object called states that has 5 US states as properties with the values being their population (doesn't have to be accurate).
 
   //Code Here
+var states = {
+  idaho: 5000,
+  utah: 7000,
+  washington: 40000,
+  oregon: 30000,
+  wyoming:4000
+};
 
 //Now, loop through your states object and if the states population is greater than 30K, alert that state.
 
   //Code Here
-
-
-
+for(var key in states){
+  if(states[key] > 30000){
+    alert(key);
+  }
+}
 
 //NEXT PROBLEM
-
-
-
-
 var user = {
     name: 'Tyler McGinnis',
     email: null,
@@ -134,19 +143,21 @@ var user = {
 that each value is truthy. If it's not truthy, remove it from the object. */
 
   //Code Here
+for(var key in user){
+  if(!user[key]){
+    delete user.key;
 
-//Once you get your truthy Object, Change the remaining values in the object to be specific to you (name: 'your name', username: 'your username'), rather than my information.
+  }
+}
+
+//Once you get your truthy Object, Change the remaining values in the object to be specific to you
+//(name: 'your name', username: 'your username'), rather than my information.
 
   //Code Here
-
-
-
+  user[name] = "Tyson";
+  user[username] = "ttaylor";
 
 //NEXT PROBLEM
-
-
-
-
 var user = {
         name: 'Tyler McGinnis',
         age: 24,
@@ -158,26 +169,24 @@ var user = {
             alert('Email is : ' + this.email);
         }
 };
+
 //Let's say I, the user, decided to change my name and email address to the following
 // name -> 'Tyler S. McGinnis', email -> 'tyler.mcginnis@devmounta.in'. Make that change.
 
   //Code Here
+user[name] = "Tyler S. McGinnis";
+user[email] = "tyler.mcginnis@devmounta.in";
 
 //Now call the sayName method that's on the user object which will alert the users email
 
   //Code Here
-
-
-
+user.sayName();
 
 //NEXT PROBLEM
-
-
-
-
 //Create an empty object called methodCollection.
 
   //Code Here
+var methodCollection =   {};
 
 /*Now add two methods (functions that are properties on objects) to your methodCollection
 object. One called 'alertHello' which alerts 'hello' and another method called logHello
