@@ -193,40 +193,58 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
  which logs 'hello' to the console. */
 
   //Code Here
+methodCollection.alertHello = function(){
+  alert('hello');
+};
+methodCollection.logHello = function(){
+  console.log('hello');
+};
 
 //Now call your alertHello and logHello methods.
-
   //Code Here
 
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 //NEXT PROBLEM
-
-
-
-// Create a function called MakePerson which takes in name, birthday, ssn as its parameters and returns a new object with all of the information that you passed in.
+// Create a function called MakePerson which takes in name, birthday, ssn as its parameters
+// and returns a new object with all of the information that you passed in.
 
   //Code Here
-
-
+function MakePerson(n, b, s){
+  var MakePersonObj = {
+    name: n,
+    birthday: b,
+    ssn: s
+  };
+    return MakePersonObj;
+}
 
 //NEXT PROBLEM
-
-
-
-// Create a function called MakeCard which takes in all the data it needs to make a Credit Card object and returns that object so that whenever you invoke MakeCard, you get a brand new credit card.
+// Create a function called MakeCard which takes in all the data it needs to make a Credit Card object
+// and returns that object so that whenever you invoke MakeCard, you get a brand new credit card.
 
   //Code Here
-
-
+function MakeCard(nameOnCard, cardNumber, expiration, Code){ //takes all data it needs
+  var cardObj = {
+    name: nameOnCard,
+    number: cardNumber,
+    exp: expiration,
+    CID: code
+  };
+  return cardObj;
+}
 
 //NEXT PROBLEM
-
-
-
-/* As of this point you should have a MakePerson and a MakeCard function which returns you either a person or a credit card object.
-   Now, create a bindCard function that takes in a person object as its first parameter and a creditcard object as its second parameter.
-   Have bindCard merge the two parameters together into a new object which contains all the properties from the person as well as the creditcard.
+/* As of this point you should have a MakePerson and a MakeCard function which returns you either a person or a credit
+card object. Now, create a bindCard function that takes in a person object as its first parameter and a creditcard object
+as its second parameter. Have bindCard merge the two parameters together into a new object which contains all the properties
+from the person as well as the creditcard.
 */
 
   //Code Here
+function bindCard(MakePersonObj, cardObj){
+  var personCopy = MakePersonObj;
+  var boundObj = personCopy.assign(MakePersonObj, cardObj);
+  return boundObj;
+}
